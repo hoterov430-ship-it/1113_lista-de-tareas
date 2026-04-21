@@ -5,8 +5,8 @@ Aplicación web para gestionar tareas diarias desarrollada en equipo usando Java
 ---
 
 ## Integrantes
-- Harold Otero
 - Camilo Vega
+- Harol Otero
 - Laura Guerrero
 - Valeria Vargas
 
