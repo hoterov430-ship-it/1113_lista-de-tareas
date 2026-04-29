@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    background: #00c853;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+li {
+    margin-top: 10px;
+    background: #2c2c2c;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}

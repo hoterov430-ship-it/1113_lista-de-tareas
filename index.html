@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📝 Lista de Tareas</h1>
+
+  <input type="text" id="tareaInput" placeholder="Escribe una tarea">
+  <button onclick="agregarTarea()">Agregar</button>
+
+  <ul id="listaTareas"></ul>
+
+  <script>
+    function agregarTarea() {
+      let input = document.getElementById("tareaInput");
+      let texto = input.value;
+
+      if (texto === "") return;
+
+      let li = document.createElement("li");
+
+      let span = document.createElement("span");
+      span.textContent = texto;
+
+      span.onclick = function() {
+        span.classList.toggle("completada");
+      };
+
+      let botonEliminar = document.createElement("button");
+      botonEliminar.textContent = "X";
+      botonEliminar.classList.add("eliminar");
+
+      botonEliminar.onclick = function() {
+        li.remove();
+      };
+
+      li.appendChild(span);
+      li.appendChild(botonEliminar);
+
+      document.getElementById("listaTareas").appendChild(li);
+
+      input.value = "";
+    }
+  </script>
+
+</body>
+</html>
