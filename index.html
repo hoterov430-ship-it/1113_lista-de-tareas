@@ -20,6 +20,18 @@
     <button onclick="agregarTarea()">Agregar</button>
   </div>
 
+  <!-- CONTADOR -->
+  <div class="contador">
+    <p id="contadorTexto">0 completadas de 0 tareas</p>
+  </div>
+
+  <!-- FILTROS -->
+  <div class="filtros">
+    <button onclick="filtrarTareas('todas')">Todas</button>
+    <button onclick="filtrarTareas('pendientes')">Pendientes</button>
+    <button onclick="filtrarTareas('completadas')">Completadas</button>
+  </div>
+
   <ul id="listaTareas"></ul>
 
 </div>

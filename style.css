@@ -11,6 +11,7 @@ body {
 }
 
 /* CONTENEDOR */
+
 .container {
     width: 400px;
     max-height: 90vh;
@@ -23,6 +24,7 @@ body {
 }
 
 /* LOGO */
+
 .logo-container {
     display: flex;
     flex-direction: column;
@@ -45,6 +47,7 @@ body {
 }
 
 /* TITULO */
+
 h1 {
     margin: 0;
     font-size: 35px;
@@ -56,6 +59,7 @@ h1 {
 }
 
 /* INPUT */
+
 .input-group {
     display: flex;
     gap: 10px;
@@ -82,7 +86,8 @@ input::placeholder {
     color: #aaa;
 }
 
-/* BOTON */
+/* BOTONES */
+
 button {
     padding: 12px 15px;
     border: none;
@@ -98,7 +103,30 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* CONTADOR */
+
+.contador {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* FILTROS */
+
+.filtros {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtros button {
+    flex: 1;
+}
+
 /* LISTA */
+
 ul {
     list-style: none;
     padding: 0;
@@ -106,6 +134,7 @@ ul {
 }
 
 /* TAREAS */
+
 li {
     background: rgba(44,44,44,0.9);
     padding: 12px;
@@ -124,18 +153,21 @@ li:hover {
 }
 
 /* TEXTO */
+
 li span {
     flex: 1;
     cursor: pointer;
 }
 
 /* COMPLETADA */
+
 .completada {
     text-decoration: line-through;
     opacity: 0.5;
 }
 
-/* BOTON ELIMINAR */
+/* ELIMINAR */
+
 .eliminar {
     background: #ff1744;
     border: none;
@@ -152,6 +184,7 @@ li span {
 }
 
 /* SCROLL */
+
 .container::-webkit-scrollbar {
     width: 8px;
 }
@@ -163,4 +196,27 @@ li span {
 
 .container::-webkit-scrollbar-track {
     background: transparent;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
 }
